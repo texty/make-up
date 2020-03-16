@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<style>
+    #zoom {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header #title {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        width: 100%;
+        height: max-content;
+    }
+
+    #title h1 {
+        text-align: center;
+        /*width: 50%;*/
+        font-size: 7vw;
+        padding: 20px 0;
+        margin: auto;
+
+    }
+
+</style>
+<body>
+<header>
+    <img src="img/cover.jpg"/>
+    <div id="title">
+        <h1>Як індустрія <br>краси сегментує <br>наше тіло</h1>
+    </div>
+</header>
+
+<h3>
+    ІНДУСТРІЮ КРАСИ МОЖНА НАЗВАТИ ТОТАЛІТАРНОЮ. ВОНА СТВОРЮЄ СВОЇ ПРАВИЛА, РОЗПОВСЮДЖУЄ ЇХ ЧЕРЕЗ СОТНІ ТИСЯЧ ЕКРАНІВ І СТЕЖИТЬ ЗА ТИМ, НАСКІЛЬКИ РЕВНО ВИ ЇХ ДОТРИМУЄТЕСЯ. МИ НАРАХУВАЛИ 427 КАТЕГОРІЙ ТОВАРІВ ДЛЯ КРАСИ. ЧОМУ ЇХ ТАК БАГАТО? ДАВАЙТЕ РОЗБИРАТИСЬ.
+</h3>
+
+<img src="img/percentage.jpg" style="display: block; margin: auto; max-width: 90%; max-height: 100vh; width: auto;"/>
+<div id="interactive1">
+
+</div>
+
+<div id="zoom"></div>
+<script src="lib/d3v5.min.js"></script>
+<script src="js/zoomer.js"></script>
+</body>
+</html>
