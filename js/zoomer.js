@@ -3,18 +3,18 @@
  */
 
 
-d3.xml("img/words.svg").then(function(data) {
+d3.xml("img/words2.svg").then(function(data) {
 
 
         d3.select("#zoom").node().append(data.documentElement);
 
-        const width = document.getElementById("zoom").getBoundingClientRect().width;
-        const height = document.getElementById("zoom").getBoundingClientRect().height;
+        const width = document.querySelector("svg").getBoundingClientRect().width;
+        const height = document.querySelector("svg").getBoundingClientRect().height;
 
         const svg = d3.select('#zoom svg');
 
-        var canvas = d3.select("#zoom")
-            .append("canvas")
+        var canvas = d3.select("canvas")
+           // .append("canvas")
             .attr("width", width)
             .attr("height", height);
 

@@ -1,0 +1,118 @@
+@charset "UTF-8";
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+#zoom {
+  max-width: 1400px;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+header {
+  position: relative; }
+  header #title {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    width: 100%;
+    height: max-content; }
+    header #title h1 {
+      text-align: center;
+      font-size: 7vw;
+      padding: 20px 0;
+      margin: auto; }
+
+/* Текст */
+.text {
+  width: 40%;
+  margin: 10px auto; }
+
+.pink {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e093be;
+  width: 50%;
+  margin: auto;
+  text-align: center; }
+
+ul {
+  padding: 0;
+  list-style-type: none; }
+
+h2 {
+  margin-top: 50px !important;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+p, li {
+  font-size: 18px;
+  line-height: 1.6; }
+  p span, li span {
+    color: #e093be;
+    font-size: 22px;
+    font-weight: bold; }
+
+li {
+  padding: 0;
+  color: #e093be;
+  margin: 10px 0; }
+
+.incut {
+  width: 50%;
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #e093be;
+  text-align: center; }
+
+.hint {
+  font-size: 14px;
+  color: #e093be; }
+
+/* Графіка */
+#interactive1 {
+  width: calc(22 * 3.5vw);
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 3.5vw);
+  grid-auto-rows: 3.5vw; }
+  #interactive1 .item-wrapper {
+    display: grid; }
+  #interactive1 img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 100%; }
+  #interactive1 .tooltip {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto; }
+
+#zoom {
+  height: max-content;
+  margin: 50px auto;
+  border-top: 1px solid #e093be;
+  border-bottom: 1px solid #e093be; }
+
+#arrow-down {
+  margin: 10px auto;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e093be; }
+
+#arrow-top {
+  margin: 10px auto;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #e093be; }
+
+/*# sourceMappingURL=styles.css.map */
