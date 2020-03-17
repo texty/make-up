@@ -37,10 +37,9 @@ d3.xml("img/drawing.svg").then(function(data) {
         .on("mouseover touchstart", function(){
             const selectedText = d3.select(this).text();
             console.log(selectedText);
-            d3.selectAll("#interactive2 svg text").style("font-size","26px").style("font-weight", "300");
+            d3.selectAll("#interactive2 svg text").style("font-size","29px");
             d3.select(this)
-                .style("font-size","35px")
-                .style("font-weight", "400");
+                .style("font-size","40px");
 
             var result = dictionary.filter(function(element) {
                 return element.key == selectedText;
