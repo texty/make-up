@@ -7,13 +7,14 @@ d3.xml("img/words2.svg").then(function(data) {
 
 
         d3.select("#zoom").node().append(data.documentElement);
-        const svg = d3.select('#zoom svg') ;
+        const svg = d3.select('#zoom svg');//.attr("xmlns", "http://www.w3.org/2000/svg");
         const width = document.querySelector("#zoom").getBoundingClientRect().width;
-        svg.attr("width", width);
         const height = document.querySelector("#zoom svg").getBoundingClientRect().height;
 
+        svg.attr("width", width).attr("height", height);
+
+
         var canvas = d3.select("canvas")
-           // .append("canvas")
             .attr("width", width)
             .attr("height", height);
 
@@ -22,9 +23,11 @@ d3.xml("img/words2.svg").then(function(data) {
         var DOMURL = window.URL || window.webkitURL || window;
         var svgString = domNodeToString(svg.node());
 
+
         var image = new Image();
         var svgBlob = new Blob([svgString], {type: "image/svg+xml;charset=utf-8"});
         var url = DOMURL.createObjectURL(svgBlob);
+
 
         image.onload = function () {
             context.drawImage(image, 0, 0);
@@ -32,7 +35,6 @@ d3.xml("img/words2.svg").then(function(data) {
         };
 
         image.src = url;
-
 
         /* додаємо зум */
         canvas.call(d3.zoom()
