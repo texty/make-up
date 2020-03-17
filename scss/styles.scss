@@ -67,6 +67,17 @@ header {
     width: 90%;
     margin: auto;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1.5px dashed $pink;
+    padding-bottom: 2px;
+  }
+
+  a:hover {
+    color: $pink;
+  }
 }
 
 .pink {
@@ -190,7 +201,7 @@ li {
       font-weight: 300;
       cursor: pointer;
       font-size: 29px;
-     // transition: all 0.5s;
+      transition: all 0.1s;
     }
   }
 }

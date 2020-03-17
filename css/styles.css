@@ -62,7 +62,8 @@
 
 #support-us {
   width: auto;
-  background-image: linear-gradient(to right, #9796f0, #e093be);
+  background-color: #e093be !important;
+  color: white;
   padding: 10px;
   outline: none;
   border: none;
@@ -161,6 +162,13 @@ header {
     .text {
       width: 90%;
       margin: auto; } }
+  .text a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1.5px dashed #e093be;
+    padding-bottom: 2px; }
+  .text a:hover {
+    color: #e093be; }
 
 .pink {
   font-family: 'PT Sans Caption', sans-serif;
@@ -260,7 +268,8 @@ li {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       cursor: pointer;
-      font-size: 29px; }
+      font-size: 29px;
+      transition: all 0.1s; }
 
 #zoom {
   width: 90%;

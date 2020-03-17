@@ -83,8 +83,9 @@ $pink: #e093be;
 #support-us {
   width:auto;
   //width:max-content;
-  //background-color: #ffc423!important;
-  background-image: linear-gradient(to right, #9796f0 , $pink);
+  background-color: $pink !important;
+  color: white;
+  //background-image: linear-gradient(to right, #9796f0 , $pink);
   padding:10px;
   outline:none;
   border:none;
