@@ -7,11 +7,10 @@ d3.xml("img/words2.svg").then(function(data) {
 
 
         d3.select("#zoom").node().append(data.documentElement);
-
-        const width = document.querySelector("svg").getBoundingClientRect().width;
-        const height = document.querySelector("svg").getBoundingClientRect().height;
-
-        const svg = d3.select('#zoom svg');
+        const svg = d3.select('#zoom svg') ;
+        const width = document.querySelector("#zoom").getBoundingClientRect().width;
+        svg.attr("width", width);
+        const height = document.querySelector("#zoom svg").getBoundingClientRect().height;
 
         var canvas = d3.select("canvas")
            // .append("canvas")
