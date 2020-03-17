@@ -1,4 +1,116 @@
 @charset "UTF-8";
+#logo-soc {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000; }
+
+.logo {
+  width: 180px; }
+
+#soc {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  position: fixed;
+  right: 0;
+  top: 8px; }
+  #soc a {
+    margin: auto;
+    text-decoration: none; }
+  #soc a span {
+    border-bottom: 1px dashed black;
+    margin-right: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black !important;
+    background-color: rgba(225, 225, 225, 0.7); }
+  #soc i {
+    font-size: 35px;
+    color: #e093be;
+    margin: 0 0 0 0.5em;
+    max-height: 1em;
+    transition: all 0.5s; }
+    #soc i:hover {
+      color: #9796f0; }
+
+#button {
+  width: 30%;
+  margin: 100px auto;
+  line-height: 1.6; }
+  @media (max-width: 812px) {
+    #button {
+      width: 70%; } }
+  #button h3 {
+    font-size: 20px !important;
+    font-family: inherit;
+    font-weight: 800;
+    text-align: center; }
+    @media (max-width: 1024px) and (orientation: portrait) {
+      #button h3 {
+        font-size: 20px !important; } }
+    @media (min-width: 1800px) {
+      #button h3 {
+        font-size: 30px; } }
+
+#button-container {
+  width: 100%;
+  display: flex; }
+
+#support-us {
+  width: auto;
+  background-image: linear-gradient(to right, #9796f0, #e093be);
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  font-size: 18px;
+  margin: auto;
+  cursor: pointer; }
+  @media (max-width: 1024px) and (orientation: portrait) {
+    #support-us {
+      font-size: 20px !important; } }
+  @media (min-width: 1800px) {
+    #support-us {
+      font-size: 20px; } }
+
+#created_texty {
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin: 4em 15% 4em 15%; }
+  #created_texty i {
+    box-sizing: content-box;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #e093be;
+    color: #e093be;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 1.5em;
+    line-height: 1;
+    transition: all 0.5s; }
+    #created_texty i:hover {
+      border: 1px solid #9796f0;
+      color: #9796f0; }
+  #created_texty img {
+    max-height: 3.5em;
+    max-width: 300px; }
+  #created_texty div {
+    text-align: center; }
+  #created_texty h3 {
+    text-align: center;
+    font-size: 1.5rem; }
+
 @font-face {
   font-family: DIETDIDOT;
   font-weight: normal;

@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <title>Як індустрія краси сегментує наше тіло</title>
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:site_name"
+          content="Як індустрія краси сегментує наше тіло"/>
+    <meta property="og:type" content="https://texty.org.ua/d/2020/makeup/"/>
+    <meta property="og:title"
+          content="Як індустрія краси сегментує наше тіло"/>
+    <meta property="og:image" content="https://texty.org.ua/d/2020/makeup/img/cover.jpg"/>
+    <meta property="og:description"
+          content="Індустрію краси можна назвати тоталітарною. Вона створює свої правила, розповсюджує їх через сотні тисяч екранів і стежить за тим, наскільки ревно ви їх дотримуєтеся."/>
+    <meta property="og:url" content="https://texty.org.ua/d/2020/makeup/"/>
+
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua"/>
+    <meta property="twitter:account_id" content="49572937"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="https://texty.org.ua/d/2020/makeup/">
+    <meta name="twitter:title"
+          content="Як індустрія краси сегментує наше тіло"/>
+    <meta name="twitter:description"
+          content="Індустрію краси можна назвати тоталітарною. Вона створює свої правила, розповсюджує їх через сотні тисяч екранів і стежить за тим, наскільки ревно ви їх дотримуєтеся."/>
+    <meta name="twitter:image:src" content="https://texty.org.ua/d/2020/makeup/img/cover.jpg"/>
+    <meta name="twitter:image:width" content="1200"/>
+    <meta name="twitter:image:height" content="630"/>
+
+
+    <!-- Other Meta Tags -->
+    <meta name="title"
+          content="Як індустрія краси сегментує наше тіло">
+    <meta name="description"
+          content="Індустрію краси можна назвати тоталітарною. Вона створює свої правила, розповсюджує їх через сотні тисяч екранів і стежить за тим, наскільки ревно ви їх дотримуєтеся.">
+
+    <!-- Links -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700|PT+Sans+Caption|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css"/>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 
 <body>
+<div id="logo-soc">
+    <a class="logo" href="https://texty.org.ua/" target="_blank"><img class='top-logo' src="img/textylogo.svg"/></a>
+
+    <div id="soc">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2020/makeup/" target="_blank" class="share-btn">
+            <i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2020/makeup/" target="_blank" class="share-btn">
+            <i class="fab fa-twitter-square"></i></a>
+    </div>
+</div>
+
+
 <header>
     <img src="img/cover.jpg"/>
     <div id="title">
@@ -148,7 +200,7 @@
         <p>Уявіть лише, скільки часу та зусиль потрібно жінкам, щоби розібратись в цих засобах та навчитись ними
             користуватись. І це ще не кажучи про багатство асортименту та різноманіття цінових пропозицій.</p>
 
-        <p class="hint">ВСІ КАТЕГОРІЇ КОМЕТИКИ: використвуйте zoom, щоб роздивитися</p>
+        <p class="hint">ВСІ КАТЕГОРІЇ КОСМЕТИКИ: використвуйте zoom, щоб роздивитися</p>
     </div>
 
     <div id="zoom">
@@ -289,20 +341,42 @@
         <p>Склад базового кошика: лосьйон / тонік для обличчя, крем для обличчя, гель для вмивання, міцелярна вода, кондиціонер для волосся, шампунь, маска для волосся, крем / лосьйон / бальзам після гоління, маска для обличчя, крем для рук, крем для тіла, мило, скраб для тіла, гель для душу, парфуми / туалетна вода / парфумована вода, бальзам для губ / гігієнічна помада, скраб для обличчя, спрей / масло для волосся, дезодорант / антиперспірант, крем сонцезахисний, пінка / гель для інтимної гігієни, піна для ванни, піна / гель для гоління, крем / бальзам для ніг, зубна паста, лак для волосся, ополіскувач для порожнини рота, дитячий крем, зубна нитка.</p>
     </div>
 
-<div class="tooltip"></div>
+<!-- Donate button -->
+<div id="button">
+    <h3>TEXTY.ORG.UA незалежне видання без навʼязливої реклами і замовних матеріалів. Щоб працювати і далі нам потрібна ваша підтримка.</h3>
+
+    <div id="button-container">
+        <button onclick="location.href='https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiNTAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0J%2FQvtC20LXRgNGC0LLQsCIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6InVrIn0%3D&signature=YFkd4Z74QCJXRxMTPoWm0JVlkX4%3D'" id="support-us">ПОЖЕРТВУВАТИ</button>
+    </div>
+</div>
+
+<section id="created_texty">
+    <div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2020/makeup/" class="share-btn">
+            <i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2020/makeup/" class="share-btn">
+            <i class="fab fa-twitter"></i></a>
+
+        <h3>Створено Текстами</h3>
+    </div>
+    <div>
+        <a href="https://texty.org.ua/" target="_blank"><img src="img/textylogo.svg" alt="texty.org.ua"></a>
+    </div>
+</section>
+
+
+
+
 <script src="lib/jquery-2.1.4.min.js"></script>
 <script src="lib/d3v5.min.js"></script>
 <script src="js/zoomer.js"></script>
 <script src="js/names.js"></script>
 
 <script>
-
     tippy('.tip', {
         duration: 0,
         arrow: false,
         delay: 0,
-//        animateFill: true,
-//        animation: 'scale',
         theme: 'pink'
     });
 
@@ -317,9 +391,21 @@
             scrollTop: $('#down-target').offset().top
         }, 500);
     });
+</script>
 
 
-
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18136548-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>
