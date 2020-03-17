@@ -38,6 +38,7 @@ header {
     width: 100%;
     height: max-content;
 
+
     h1 {
       font-family: "DIETDIDOT", serif;
       text-align: center;
@@ -46,6 +47,9 @@ header {
       margin: auto;
       line-height: 1;
       font-weight: bold;
+      @media(max-width: 600px){
+        font-size: 50px;
+      }
     }
   }
 }
@@ -185,8 +189,8 @@ li {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       cursor: pointer;
-      font-size: 22px;
-      transition: all 0.5s;
+      font-size: 26px;
+     // transition: all 0.5s;
     }
   }
 }

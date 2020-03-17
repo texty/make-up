@@ -34,19 +34,22 @@ d3.xml("img/drawing.svg").then(function(data) {
     const svg = d3.select("#interactive2 svg");
 
     d3.selectAll("#interactive2 svg text")
-        .on("mouseover", function(){
+        .on("mouseover touchstart", function(){
             const selectedText = d3.select(this).text();
             console.log(selectedText);
-            d3.selectAll("#interactive2 svg text").style("font-size","22px");
-            d3.select(this).selectAll("tspan").style("font-size","30px !important");
+            d3.selectAll("#interactive2 svg text").style("font-size","26px").style("font-weight", "300");
+            d3.select(this)
+                .style("font-size","35px")
+                .style("font-weight", "400");
+
             var result = dictionary.filter(function(element) {
                 return element.key == selectedText;
             });
             d3.select("#test-answer").html(result[0].key.replace('(', ' (') + " = " + result[0].value)
-        })
-        .on("mouseleave", function() {
-            d3.selectAll("#interactive2 svg text").style("font-size","22px");
         });
+        // .on("mouseleave", function() {
+        //     d3.selectAll("#interactive2 svg text").style("font-size","26px").style("font-weight", "normal");
+        // });
 
 
 

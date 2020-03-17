@@ -5,14 +5,14 @@
 
 d3.xml("img/words2.svg").then(function(data) {
 
-
         d3.select("#zoom").node().append(data.documentElement);
-        const svg = d3.select('#zoom svg');//.attr("xmlns", "http://www.w3.org/2000/svg");
+        const svg = d3.select('#zoom svg');
         const width = document.querySelector("#zoom").getBoundingClientRect().width;
         const height = document.querySelector("#zoom svg").getBoundingClientRect().height;
 
-        svg.attr("width", width).attr("height", height);
-
+        svg
+            .attr("width", width)
+            .attr("height", height);
 
         var canvas = d3.select("canvas")
             .attr("width", width)
