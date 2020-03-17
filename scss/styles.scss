@@ -105,6 +105,12 @@ li {
   color: $pink;
 }
 
+#test-answer {
+  color: $pink;
+  margin-bottom: 80px;
+  min-height: 50px;
+}
+
 /* Графіка */
 
 #interactive1 {
@@ -119,8 +125,7 @@ li {
   }
 
   img {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    cursor: pointer;
     max-width: 100%
   }
 
@@ -129,6 +134,27 @@ li {
     grid-row: 1/2;
     margin: auto;
 
+  }
+}
+
+#interactive2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-top: 1px solid $pink;
+  border-bottom: 1px solid $pink;
+
+
+
+  svg {
+    display: block;
+    margin: auto;
+
+    text {
+      cursor: pointer;
+      font-size: 8px;
+      transition: all 0.5s;
+    }
   }
 }
 
@@ -142,6 +168,7 @@ li {
 }
 
 #arrow-down {
+  cursor: pointer;
   margin: 10px auto;
   width: 0;
   height: 0;
@@ -151,6 +178,7 @@ li {
 }
 
 #arrow-up {
+  cursor: pointer;
   margin: 10px auto;
   width: 0;
   height: 0;
@@ -162,9 +190,13 @@ li {
 
 
 .tippy-box[data-theme~='pink'] {
-  background-color: $pink;
+  background-image: linear-gradient(to right, #9796f0 , $pink);
+  position: absolute;
+  text-align: center;
+  width: max-content;
+  min-height: 28px;
   color: black;
-  font-size: 22px;
-  top: 50px;
+  font-size: calc(14px + 0.4vw);
+  z-index: 1000;
 }
 

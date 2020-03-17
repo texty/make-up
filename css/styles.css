@@ -85,6 +85,11 @@ li {
   font-size: 14px;
   color: #e093be; }
 
+#test-answer {
+  color: #e093be;
+  margin-bottom: 80px;
+  min-height: 50px; }
+
 /* Графіка */
 #interactive1 {
   width: calc(22 * 3.5vw);
@@ -95,13 +100,26 @@ li {
   #interactive1 .item-wrapper {
     display: grid; }
   #interactive1 img {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    cursor: pointer;
     max-width: 100%; }
   #interactive1 .tooltip {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: auto; }
+
+#interactive2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-top: 1px solid #e093be;
+  border-bottom: 1px solid #e093be; }
+  #interactive2 svg {
+    display: block;
+    margin: auto; }
+    #interactive2 svg text {
+      cursor: pointer;
+      font-size: 8px;
+      transition: all 0.5s; }
 
 #zoom {
   height: max-content;
@@ -110,6 +128,7 @@ li {
   border-bottom: 1px solid #e093be; }
 
 #arrow-down {
+  cursor: pointer;
   margin: 10px auto;
   width: 0;
   height: 0;
@@ -118,6 +137,7 @@ li {
   border-top: 20px solid #e093be; }
 
 #arrow-up {
+  cursor: pointer;
   margin: 10px auto;
   width: 0;
   height: 0;
@@ -126,9 +146,13 @@ li {
   border-bottom: 20px solid #e093be; }
 
 .tippy-box[data-theme~='pink'] {
-  background-color: #e093be;
+  background-image: linear-gradient(to right, #9796f0, #e093be);
+  position: absolute;
+  text-align: center;
+  width: max-content;
+  min-height: 28px;
   color: black;
-  font-size: 22px;
-  top: 50px; }
+  font-size: calc(14px + 0.4vw);
+  z-index: 1000; }
 
 /*# sourceMappingURL=styles.css.map */
