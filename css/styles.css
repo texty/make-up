@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: DIETDIDOT;
+  font-weight: normal;
+  src: url("../font/DIETDIDOT.OTF") format("embedded-opentype"); }
+@font-face {
+  font-family: DIETDIDOT;
+  font-weight: bold;
+  src: url("../font/DIETDIDOT-BOLD.OTF") format("embedded-opentype"); }
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -18,16 +26,22 @@ header {
     width: 100%;
     height: max-content; }
     header #title h1 {
+      font-family: "DIETDIDOT", serif;
       text-align: center;
       font-size: 7vw;
       padding: 20px 0;
       margin: auto;
-      line-height: 1; }
+      line-height: 1;
+      font-weight: bold; }
 
 /* Текст */
 .text {
-  width: 40%;
+  width: 30%;
   margin: 10px auto; }
+  @media (max-width: 1366px) {
+    .text {
+      width: 40%;
+      margin: auto; } }
   @media (max-width: 812px) {
     .text {
       width: 90%;
@@ -72,16 +86,20 @@ li {
 .incut {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  width: 50%;
+  width: 40%;
   margin: 30px auto;
   text-transform: uppercase;
   font-size: calc(35px + 0.5vw);
   color: #e093be;
   text-align: center; }
+  @media (max-width: 1366px) {
+    .incut {
+      width: 50%;
+      margin: auto; } }
   @media (max-width: 812px) {
     .incut {
       width: 90%;
-      font-size: 25px; } }
+      font-size: calc(25px + 0.5vw); } }
 
 .hint {
   font-size: 16px;
