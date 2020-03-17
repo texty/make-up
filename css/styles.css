@@ -13,10 +13,11 @@ img {
   width: 100%; }
 
 header {
-  position: relative; }
+  max-width: 1600px;
+  position: relative;
+  margin: auto; }
   header #title {
-    position: absolute;
-    bottom: 40px;
+    margin-top: -20vw;
     display: flex;
     width: 100%;
     height: max-content; }
@@ -24,12 +25,17 @@ header {
       text-align: center;
       font-size: 7vw;
       padding: 20px 0;
-      margin: auto; }
+      margin: auto;
+      line-height: 1; }
 
 /* Текст */
 .text {
   width: 40%;
   margin: 10px auto; }
+  @media (max-width: 812px) {
+    .text {
+      width: 90%;
+      margin: auto; } }
 
 .pink {
   font-size: 25px;
@@ -40,6 +46,10 @@ header {
   width: 50%;
   margin: auto;
   text-align: center; }
+  @media (max-width: 812px) {
+    .pink {
+      width: 90%;
+      margin: auto; } }
 
 ul {
   padding: 0;
@@ -101,18 +111,24 @@ li {
 
 #arrow-down {
   margin: 10px auto;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #e093be; }
 
-#arrow-top {
+#arrow-up {
   margin: 10px auto;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid #e093be; }
+
+.tippy-box[data-theme~='pink'] {
+  background-color: #e093be;
+  color: black;
+  font-size: 22px;
+  top: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
