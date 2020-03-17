@@ -295,11 +295,6 @@ li {
 
 .tippy-box[data-theme~='pink'] {
   background-image: linear-gradient(to right, #9796f0, #e093be);
-  position: absolute;
-  text-align: center;
-  width: max-content;
-  min-height: 28px;
-  color: black;
   font-size: calc(14px + 0.4vw);
   z-index: 1000; }
 
