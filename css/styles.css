@@ -130,7 +130,6 @@ img {
   width: 100%; }
 
 header {
-  max-width: 1600px;
   max-height: 100vh;
   position: relative;
   margin: auto;
@@ -146,6 +145,7 @@ header {
     height: max-content; }
     @media (max-width: 600px) {
       header #title {
+        margin-top: -10vh;
         position: relative; } }
     header #title h1 {
       font-family: "DIETDIDOT", serif;
@@ -157,7 +157,7 @@ header {
       font-weight: bold; }
       @media (max-width: 600px) {
         header #title h1 {
-          font-size: 50px; } }
+          font-size: 40px; } }
 
 /* Текст */
 .text {

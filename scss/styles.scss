@@ -28,7 +28,7 @@ img {
 }
 
 header {
-  max-width: 1600px;
+  //max-width: 1600px;
   max-height: 100vh;
   position: relative;
   margin: auto;
@@ -48,6 +48,7 @@ header {
     width: 100%;
     height: max-content;
     @media(max-width: 600px){
+      margin-top: -10vh;
       position: relative;
     }
 
@@ -61,7 +62,7 @@ header {
       line-height: 1;
       font-weight: bold;
       @media(max-width: 600px){
-        font-size: 50px;
+        font-size: 40px;
       }
     }
   }
