@@ -142,24 +142,26 @@ img {
   width: 100%; }
 
 header {
-  max-height: 100vh;
-  position: relative;
-  margin: auto;
-  overflow-y: hidden; }
+  height: max-content;
+  margin: auto; }
   header img {
-    height: 100%;
-    max-width: 100%; }
+    width: 100%; }
   header #title {
-    position: absolute;
-    bottom: 0;
+    margin-top: -20vw;
     display: flex;
     width: 100%;
     height: max-content; }
+    @media (min-width: 1600px) {
+      header #title {
+        position: absolute;
+        bottom: 0;
+        margin-top: 0; } }
     @media (max-width: 600px) {
       header #title {
         margin-top: -10vh;
         position: relative; } }
     header #title h1 {
+      width: 60vw;
       font-family: "DIETDIDOT", serif;
       text-align: center;
       font-size: 7vw;
@@ -167,6 +169,9 @@ header {
       margin: auto;
       line-height: 1;
       font-weight: bold; }
+      @media (min-width: 1601px) {
+        header #title h1 {
+          font-size: 100px; } }
       @media (max-width: 600px) {
         header #title h1 {
           font-size: 40px; } }
