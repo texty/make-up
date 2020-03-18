@@ -1,14 +1,14 @@
 /**
  * Created by yevheniia on 17.03.20.
  */
-d3.xml("img/drawing.svg").then(function(data) {
+d3.xml("img/names.svg").then(function(data) {
 
    d3.select("#interactive2").node().append(data.documentElement);
 
     const dictionary = [
         { key: "Філлер", value:" засіб, що використовується для збільшення об’єму там, де його недостатньо. Найчастіше – для заповнення зморшок, збільшення об’єму губ тощо. Так називають і засіб, що вводиться ін’єкційно косметологом, і косметику з «ефектом наповнення»" },
         { key: "Гоммаж", value: " відлущувальний косметичний засіб для шкіри (працює як скраб, але містить не механічні крупинки, що відлущують ороговілий шар шкіри, а спеціальні компоненти, які викликають швидке відлущування)" },
-        { key: "Ексфоліант(ексфоліатор)", value: "Ексфоліація = пілінг. Фактично ексфоліантом можна назвати як будь який скраб, так і гоммаж чи засіб з кислотою, що відлущує ороговілий шар шкіри" },
+        { key: "Ексфоліант (ексфоліатор)", value: "Ексфоліація = пілінг. Фактично ексфоліантом можна назвати як будь який скраб, так і гоммаж чи засіб з кислотою, що відлущує ороговілий шар шкіри" },
         { key: "Гідролат", value: "«квіткова вода». По суті, це дистильована вода з розчиненими у ній рослинними екстрактами. Виглядає як каламутна водичка з вираженим запахом певної рослини. Використовують як тонік, ефірну олію для ванни чи навіть пропонують нею розводити глиняні маски"},
         { key: "Убтан", value: "дуже дрібна суміш трав та глин, яка працює як скраб, проте відлущувальні частки в ньому, на відміну від більшості скрабів, дуже дрібні."},
         { key: "Шиммер", value: " засіб з лінійки декоративної косметики для надання шкірі блиску"},
@@ -33,9 +33,10 @@ d3.xml("img/drawing.svg").then(function(data) {
         .on("mouseover touchstart", function(){
             const selectedText = d3.select(this).text();
             console.log(selectedText);
-            d3.selectAll("#interactive2 svg text").style("font-size","29px");
-            d3.select(this)
-                .style("font-size","40px");
+            d3.selectAll("#interactive2 svg text").style("font-size","65px");
+            d3.selectAll("#interactive2 svg text tspan").style("font-size","65px");
+            d3.select(this).style("font-size","80px");
+            d3.select(this).selectAll("tspan").style("font-size","80px");
 
             var result = dictionary.filter(function(element) {
                 return element.key == selectedText;
