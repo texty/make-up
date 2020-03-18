@@ -248,9 +248,11 @@ li {
 
 
 
-.tippy-box[data-theme~='pink'] {
-  background-image: linear-gradient(to right, #9796f0 , $pink);
-  font-size: calc(14px + 0.4vw);
-  z-index: 1000;
+//.tippy-box[data-theme~='pink'] {
+  .tooltip {
+    padding: 3px;
+    background-image: linear-gradient(to right, #9796f0 , $pink);
+    font-size: calc(14px + 0.4vw);
+    z-index: 1000;
 }
 

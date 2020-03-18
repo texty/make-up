@@ -38,7 +38,7 @@
       color: #9796f0; }
 
 #button {
-  width: 30%;
+  width: 50%;
   margin: 100px auto;
   line-height: 1.6; }
   @media (max-width: 812px) {
@@ -299,7 +299,8 @@ li {
   border-right: 20px solid transparent;
   border-bottom: 20px solid #e093be; }
 
-.tippy-box[data-theme~='pink'] {
+.tooltip {
+  padding: 3px;
   background-image: linear-gradient(to right, #9796f0, #e093be);
   font-size: calc(14px + 0.4vw);
   z-index: 1000; }
