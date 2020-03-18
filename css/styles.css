@@ -152,6 +152,7 @@ header {
 
 /* Текст */
 .text {
+  max-width: 700px;
   width: 50%;
   margin: 10px auto; }
   @media (max-width: 812px) {
@@ -174,10 +175,12 @@ header {
   text-transform: uppercase;
   color: #e093be;
   width: 70%;
+  max-width: 900px;
   margin: 50px auto auto auto;
   text-align: center; }
   @media (max-width: 812px) {
     .pink {
+      font-size: 20px;
       width: 90%;
       margin: auto; } }
 
@@ -205,6 +208,7 @@ li {
 .incut {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  max-width: 800px;
   width: 60%;
   margin: 30px auto;
   text-transform: uppercase;
@@ -243,7 +247,7 @@ li {
     margin: auto; }
 
 #interactive2 {
-  width: 50%;
+  width: 60%;
   margin: 50px auto 10px auto;
   border-top: 1px solid #e093be;
   border-bottom: 1px solid #e093be; }
@@ -260,6 +264,8 @@ li {
       font-weight: 300;
       cursor: pointer;
       font-size: 65px;
+      transition: all 0.1s; }
+    #interactive2 svg text tspan {
       transition: all 0.1s; }
 
 #zoom {

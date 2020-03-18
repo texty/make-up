@@ -3,7 +3,7 @@
  */
 
 
-d3.xml("img/words2.svg").then(function(data) {
+d3.xml("img/words_txt.svg").then(function(data) {
 
         d3.select("#zoom").node().append(data.documentElement);
         const svg = d3.select('#zoom svg');
