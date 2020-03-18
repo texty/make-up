@@ -226,17 +226,16 @@ li {
 .incut {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
-  max-width: 800px;
-  width: 60%;
+  width: 70%;
   margin: 30px auto;
   text-transform: uppercase;
-  font-size: calc(30px + 0.5vw);
+  font-size: calc(27px + 0.5vw);
   color: #e093be;
   text-align: center; }
   @media (max-width: 812px) {
     .incut {
       width: 90%;
-      font-size: calc(25px + 0.5vw); } }
+      font-size: calc(20px + 0.5vw); } }
 
 .hint {
   font-size: 16px;
