@@ -142,26 +142,21 @@ img {
   width: 100%; }
 
 header {
+  width: 100%;
   height: max-content;
   margin: auto; }
   header img {
     width: 100%; }
   header #title {
-    margin-top: -20vw;
+    margin-top: -15vw;
     display: flex;
     width: 100%;
     height: max-content; }
-    @media (min-width: 1600px) {
-      header #title {
-        position: absolute;
-        bottom: 0;
-        margin-top: 0; } }
     @media (max-width: 600px) {
       header #title {
         margin-top: -10vh;
         position: relative; } }
     header #title h1 {
-      width: 60vw;
       font-family: "DIETDIDOT", serif;
       text-align: center;
       font-size: 7vw;
