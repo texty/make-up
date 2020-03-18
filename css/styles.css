@@ -216,7 +216,7 @@ h2 {
 p, li {
   font-size: calc(15px + 0.3vw);
   line-height: 1.6; }
-  p span, li span {
+  p span.underline, li span.underline {
     color: #e093be;
     font-size: 22px;
     font-weight: bold; }
