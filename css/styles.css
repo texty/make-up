@@ -113,6 +113,18 @@
     font-size: 1.5rem; }
 
 @font-face {
+  font-family: 'ProximaNova';
+  src: url("../font/proxima_regular/proxima-nova-regular.eot");
+  src: url("../font/proxima_regular/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../font/proxima_regular/proxima-nova-regular.woff2") format("woff2"), url("../font/proxima_regular/proxima-nova-regular.woff") format("woff"), url("../font/proxima_regular/proxima-nova-regular.ttf") format("truetype"), url("../font/proxima_regular/proxima-nova-regular.svg#youworkforthem") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../font/proxima_bold/proxima-nova-bold.eot");
+  src: url("../font/proxima_bold/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../font/proxima_bold/proxima-nova-bold.woff2") format("woff2"), url("../font/proxima_bold/proxima-nova-bold.woff") format("woff"), url("../font/proxima_bold/proxima-nova-bold.ttf") format("truetype"), url("../font/proxima_bold/proxima-nova-bold.svg#youworkforthem") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
   font-family: DIETDIDOT;
   font-weight: normal;
   src: url("../font/DIETDIDOT.OTF") format("embedded-opentype"); }
@@ -121,7 +133,7 @@
   font-weight: bold;
   src: url("../font/DIETDIDOT-BOLD.OTF") format("embedded-opentype"); }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%; }
@@ -177,7 +189,6 @@ header {
     color: #e093be; }
 
 .pink {
-  font-family: 'PT Sans Caption', sans-serif;
   font-size: 30px;
   line-height: 1.6;
   font-weight: 400;
@@ -215,7 +226,7 @@ li {
   color: #e093be; }
 
 .incut {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
   max-width: 800px;
   width: 60%;
@@ -269,7 +280,7 @@ li {
     display: block;
     margin: -3vw auto; }
     #interactive2 svg text {
-      font-family: 'ProximaNova-Medium';
+      font-family: 'ProximaNova', sans-serif;
       font-weight: 300;
       cursor: pointer;
       font-size: 65px;
@@ -284,6 +295,7 @@ li {
   border-top: 1px solid #e093be;
   border-bottom: 1px solid #e093be; }
   #zoom svg {
+    font-family: 'ProximaNova', sans-serif;
     width: 100%;
     height: 100%;
     margin: auto; }

@@ -1,5 +1,28 @@
 @import "base";
 
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../font/proxima_regular/proxima-nova-regular.eot');
+  src: url('../font/proxima_regular/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/proxima_regular/proxima-nova-regular.woff2') format('woff2'),
+  url('../font/proxima_regular/proxima-nova-regular.woff') format('woff'),
+  url('../font/proxima_regular/proxima-nova-regular.ttf') format('truetype'),
+  url('../font/proxima_regular/proxima-nova-regular.svg#youworkforthem') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../font/proxima_bold/proxima-nova-bold.eot');
+  src: url('../font/proxima_bold/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/proxima_bold/proxima-nova-bold.woff2') format('woff2'),
+  url('../font/proxima_bold/proxima-nova-bold.woff') format('woff'),
+  url('../font/proxima_bold/proxima-nova-bold.ttf') format('truetype'),
+  url('../font/proxima_bold/proxima-nova-bold.svg#youworkforthem') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
 
 @font-face {
   font-family: DIETDIDOT;
@@ -16,7 +39,7 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -92,7 +115,6 @@ header {
 }
 
 .pink {
-  font-family: 'PT Sans Caption', sans-serif;
   font-size: 30px;
   line-height: 1.6;
   font-weight: 400;
@@ -138,7 +160,7 @@ li {
 }
 
 .incut {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova', sans-serif;
   font-weight: 300;
   max-width: 800px;
   width: 60%;
@@ -206,7 +228,7 @@ li {
     margin: -3vw auto;
 
     text {
-      font-family: 'ProximaNova-Medium';
+      font-family: 'ProximaNova', sans-serif;
       //font-family: 'Roboto';
       font-weight: 300;
       cursor: pointer;
@@ -230,6 +252,7 @@ li {
   border-bottom: 1px solid $pink;
 
   svg {
+    font-family: 'ProximaNova', sans-serif;
     width: 100%;
     height: 100%;
     margin: auto;

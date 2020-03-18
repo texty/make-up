@@ -14,6 +14,8 @@ d3.xml("img/words_txt.svg").then(function(data) {
             .attr("width", width)
             .attr("height", height);
 
+        svg.selectAll("text").style("font-family", "'ProximaNova', sans-serif");
+
         var canvas = d3.select("canvas")
             .attr("width", width)
             .attr("height", height);
