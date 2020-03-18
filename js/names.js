@@ -31,8 +31,7 @@ d3.xml("img/names.svg").then(function(data) {
 
     d3.selectAll("#interactive2 svg text")
         .on("mouseover touchstart", function(){
-            const selectedText = d3.select(this).text();
-            console.log(selectedText);
+            const selectedText = d3.select(this).text();            
             d3.selectAll("#interactive2 svg text").style("font-size","65px");
             d3.selectAll("#interactive2 svg text tspan").style("font-size","65px");
             d3.select(this).style("font-size","80px");
