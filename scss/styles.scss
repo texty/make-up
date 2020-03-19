@@ -202,6 +202,10 @@ li {
     max-width: 100%
   }
 
+  .tip {
+    transition: all 0.1s;
+  }
+
   .tooltip {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -291,3 +295,30 @@ li {
     z-index: 1000;
 }
 
+
+#credits {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 600px) {
+      display: block;
+    }
+  }
+
+.authors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media(max-width: 600px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  img {
+    width: 120px;
+    border-radius: 50%;
+    @media(max-width: 600px) {
+      width: 100px;
+    }
+  }
+}

@@ -19,6 +19,7 @@
     margin: auto;
     text-decoration: none; }
   #soc a span {
+    text-decoration: none;
     border-bottom: 1px dashed black;
     margin-right: 20px;
     font-weight: 800;
@@ -85,6 +86,9 @@
   justify-items: center;
   align-content: center;
   margin: 4em 15% 4em 15%; }
+  #created_texty a {
+    text-decoration: none;
+    border: 0; }
   #created_texty i {
     box-sizing: content-box;
     margin: 0.5em;
@@ -258,6 +262,8 @@ li {
   #interactive1 img {
     cursor: pointer;
     max-width: 100%; }
+  #interactive1 .tip {
+    transition: all 0.1s; }
   #interactive1 .tooltip {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -322,5 +328,28 @@ li {
   background-image: linear-gradient(to right, #9796f0, #e093be);
   font-size: calc(14px + 0.4vw);
   z-index: 1000; }
+
+#credits {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 600px) {
+    #credits {
+      display: block; } }
+
+.authors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  @media (max-width: 600px) {
+    .authors {
+      justify-content: flex-start;
+      align-items: flex-start; } }
+  .authors img {
+    width: 120px;
+    border-radius: 50%; }
+    @media (max-width: 600px) {
+      .authors img {
+        width: 100px; } }
 
 /*# sourceMappingURL=styles.css.map */

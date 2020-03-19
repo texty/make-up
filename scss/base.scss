@@ -28,6 +28,7 @@ $pink: #e093be;
   }
 
   a span {
+    text-decoration: none;
     border-bottom: 1px dashed black;
     margin-right:20px;
     font-weight:800;
@@ -111,6 +112,11 @@ $pink: #e093be;
   justify-items: center;
   align-content: center;
   margin: 4em 15% 4em 15%;
+
+  a {
+    text-decoration: none;
+    border: 0;
+  }
 
   i {
     box-sizing: content-box;
