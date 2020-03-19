@@ -250,6 +250,11 @@ li {
   margin-bottom: 5vw;
   min-height: 100px; }
 
+.histo {
+  display: block;
+  width: 90%;
+  margin: 60px auto; }
+
 /* Графіка */
 #interactive1 {
   width: calc(22 * 3.5vw);
