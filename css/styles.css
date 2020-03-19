@@ -264,7 +264,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 30px; }
     @media (max-width: 600px) {
       #credits .authors {
         justify-content: flex-start;
@@ -275,6 +276,9 @@ header {
       @media (max-width: 600px) {
         #credits .authors img {
           width: 100px; } }
+    #credits .authors p {
+      margin: 0;
+      width: 100%; }
 
 /* Графіка */
 #interactive1 {
