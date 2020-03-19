@@ -93,14 +93,6 @@ header {
 
 /* Текст */
 .text {
-  max-width: 700px;
-  width: 50%;
-  margin: 10px auto;
-  @media(max-width: 812px){
-    width: 90%;
-    margin: auto;
-  }
-
   a {
     text-decoration: none;
     color: inherit;
@@ -110,6 +102,48 @@ header {
 
   a:hover {
     color: $pink;
+  }
+
+  h2, h3, h4, p:not(.incut), li, #credits {
+    max-width: 700px;
+    width: 50%;
+    @media(max-width: 812px){
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  h2 {
+    margin: 50px auto 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+  p:not(.incut) {
+    margin: 10px auto;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0 auto;
+    padding: 0;
+    color: #e093be;
+  }
+
+  p:not(.incut), li {
+    font-size: calc(15px + 0.3vw);
+    line-height: 1.6;
+
+    span.underline {
+      color: #e093be;
+      font-size: 22px;
+      font-weight: bold;
+    }
   }
 }
 
@@ -130,33 +164,6 @@ header {
   }
 }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-h2 {
-  margin-top: 50px !important;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-p, li {
-  font-size: calc(15px + 0.3vw);
-  line-height: 1.6;
-
-  span.underline {
-    color: #e093be;
-    font-size: 22px;
-    font-weight: bold;
-  }
-}
-
-li {
-  padding: 0;
-  color: #e093be;
-  //margin-top: 10px;
-}
 
 .incut {
   font-family: 'ProximaNova', sans-serif;
@@ -164,7 +171,7 @@ li {
   width: 70%;
   margin: 30px auto;
   text-transform: uppercase;
-  font-size: calc(27px + 0.5vw);
+  font-size: calc(27px + 0.5vw) ;
   color: #e093be;
   text-align: center;
   @media(max-width: 812px){
@@ -172,6 +179,7 @@ li {
     font-size: calc(20px + 0.5vw);
   }
 }
+
 
 .hint {
   font-size: 16px;
@@ -191,11 +199,40 @@ li {
   margin: 60px auto;
 }
 
+
+#credits {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: 600px) {
+    display: block;
+  }
+
+  .authors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media(max-width: 600px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    img {
+      width: 120px;
+      border-radius: 50%;
+      @media(max-width: 600px) {
+        width: 100px;
+      }
+    }
+  }
+}
+
 /* Графіка */
 
 #interactive1 {
   width: calc(22 * 3.5vw);
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 3.5vw);
   grid-auto-rows:  3.5vw;
@@ -294,8 +331,7 @@ li {
 
 
 
-//.tippy-box[data-theme~='pink'] {
-  .tooltip {
+.tooltip {
     padding: 3px;
     background-image: linear-gradient(to right, #9796f0 , $pink);
     font-size: calc(14px + 0.4vw);
@@ -303,29 +339,3 @@ li {
 }
 
 
-#credits {
-    display: flex;
-    justify-content: space-between;
-    @media(max-width: 600px) {
-      display: block;
-    }
-  }
-
-.authors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  @media(max-width: 600px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  img {
-    width: 120px;
-    border-radius: 50%;
-    @media(max-width: 600px) {
-      width: 100px;
-    }
-  }
-}
